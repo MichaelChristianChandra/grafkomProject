@@ -53,12 +53,12 @@ namespace Console1
             var badan = new Asset_3D(new Vector3(0.8f, 0.8f, 0f));
             var tangankanan = new Asset_3D(new Vector3(0.8f, 0.8f, 0f));
             var tangankiri = new Asset_3D(new Vector3(0.8f, 0.8f, 0f));
-            var bahukanan = new Asset_3D(new Vector3(1,1,1));
-            var bahukiri = new Asset_3D(new Vector3(1,1,1));
-            var matakanan = new Asset_3D(new Vector3(1,1,1));
-            var matakiri = new Asset_3D(new Vector3(1,1,1));
-            var pupilkanan = new Asset_3D(new Vector3(0,0,0));
-            var pupilkiri = new Asset_3D(new Vector3(0,0,0));
+            var bahukanan = new Asset_3D(new Vector3(1, 1, 1));
+            var bahukiri = new Asset_3D(new Vector3(1, 1, 1));
+            var matakanan = new Asset_3D(new Vector3(1, 1, 1));
+            var matakiri = new Asset_3D(new Vector3(1, 1, 1));
+            var pupilkanan = new Asset_3D(new Vector3(0, 0, 0));
+            var pupilkiri = new Asset_3D(new Vector3(0, 0, 0));
             var mulut = new Asset_3D(new Vector3(0.6f, 0, 0));
             var baju = new Asset_3D(new Vector3(1, 1, 1));
             var celana = new Asset_3D(new Vector3(0.4f, 0.4f, 0));
@@ -125,7 +125,7 @@ namespace Console1
             outlinehidung2.AddCoords(45, -0.72f, 1.4f);
             outlinehidung2.AddCoords(45, -0.7f, 1.4f);
 
-            outlinehidung2.Bezier(10);  
+            outlinehidung2.Bezier(10);
 
             _object.Add(kubus);
 
@@ -310,7 +310,7 @@ namespace Console1
             _object3d[18].createBoxVertices(15f, -6.0f, -20f, 0.08f);//katup
 
             _object3d[19] = new Asset_3D(new Vector3(1f, 0f, 0f)); //X mark
-            _object3d[19].AddCoords(0, -1f , -11.3f);
+            _object3d[19].AddCoords(0, -1f, -11.3f);
             _object3d[19].AddCoords(1, -.75f, -11.3f);
             _object3d[19].AddCoords(2, -.5f, -11.6f);
             _object3d[19].AddCoords(3, -.25f, -11.7f);
@@ -332,23 +332,23 @@ namespace Console1
 
             //Gary
             _object3d[21] = new Asset_3D(new Vector3(1f, 0.5f, 0.54f));
-            _object3d[21].createEllipsoid(2f, 3f, 2.5f, 28f, -5f, -.8f, 72, 24); //cangkang
+            _object3d[21].createEllipsoid(2f, 3f, 2.5f, 35f, -5f, -.8f, 72, 24); //cangkang
             _object3d[21].rotate(_object3d[21]._centerPosition, _object3d[0]._euler[0], 180f);
             _object3d[22] = new Asset_3D(new Vector3(0.313f, 0.886f, 0.815f));
-            _object3d[22].createEllipsoid2(2f, 4f, 1f, 28f, 0, -5.5f, 72, 24); //badan
+            _object3d[22].createEllipsoid2(2f, 4f, 1f, 35f, 0, -5.5f, 72, 24); //badan
             _object3d[22].rotate(_object3d[22]._centerPosition, _object3d[0]._euler[0], 90f);
             _object3d[23] = new Asset_3D(new Vector3(0.313f, 0.886f, 0.815f));
-            _object3d[23].createEllipsoid2(0.2f, 1f, 0.2f, 27.5f, -4.5f, 3f, 72, 24); //batang mata kiri
+            _object3d[23].createEllipsoid2(0.2f, 1f, 0.2f, 34.5f, -4.5f, 3f, 72, 24); //batang mata kiri
             _object3d[24] = new Asset_3D(new Vector3(0.313f, 0.886f, 0.815f));
-            _object3d[24].createEllipsoid2(0.2f, 1f, 0.2f, 28.5f, -4.5f, 3f, 72, 24); //batang mata kanan
+            _object3d[24].createEllipsoid2(0.2f, 1f, 0.2f, 35.5f, -4.5f, 3f, 72, 24); //batang mata kanan
             _object3d[25] = new Asset_3D(new Vector3(1f, 1f, 1f));
-            _object3d[25].createEllipsoid2(0.5f, 0.5f, 0.5f, 28.5f, -3.5f, 3f, 72, 24); //mata kanan
+            _object3d[25].createEllipsoid2(0.5f, 0.5f, 0.5f, 35.5f, -3.5f, 3f, 72, 24); //mata kanan
             _object3d[26] = new Asset_3D(new Vector3(1f, 1f, 1f));
-            _object3d[26].createEllipsoid2(0.5f, 0.5f, 0.5f, 27.5f, -3.5f, 3f, 72, 24); //mata kiri
+            _object3d[26].createEllipsoid2(0.5f, 0.5f, 0.5f, 34.5f, -3.5f, 3f, 72, 24); //mata kiri
             _object3d[27] = new Asset_3D(new Vector3(0f, 0f, 0f));
-            _object3d[27].createEllipsoid2(0.2f, 0.2f, 0.2f, 28.5f, -3.5f, 3.4f, 72, 24); //dalam mata kanan
+            _object3d[27].createEllipsoid2(0.2f, 0.2f, 0.2f, 35.5f, -3.5f, 3.4f, 72, 24); //dalam mata kanan
             _object3d[28] = new Asset_3D(new Vector3(0f, 0f, 0f));
-            _object3d[28].createEllipsoid2(0.2f, 0.2f, 0.2f, 27.5f, -3.5f, 3.4f, 72, 24); //dalam mata kiri
+            _object3d[28].createEllipsoid2(0.2f, 0.2f, 0.2f, 34.5f, -3.5f, 3.4f, 72, 24); //dalam mata kiri
 
             //Environment
             var env = new Asset_3D(new Vector3(0, 0, 0));
@@ -367,7 +367,7 @@ namespace Console1
             RoadSign.createCuboid(-24.8f, 2f, -10f, 0.2f, 5, 22);
             var Gate = new Asset_3D(new Vector3(1, 1, 0f));
 
- 
+
 
 
             var merah = new Asset_3D(new Vector3(1, 0, 0));
@@ -470,7 +470,7 @@ namespace Console1
             _object[4].child.Add(lifebuoy);
             _object[4].child.Add(stickLifebuoy);
 
-            
+
 
 
 
@@ -506,7 +506,7 @@ namespace Console1
                 i.OnLoad(Warna.col + "shader.vert", Warna.col + "shader.frag", Size.X, Size.Y);
             }
             _object3d[0].OnLoad(Warna.col + "shader.vert", Warna.col + "shader.frag", Size.X, Size.Y);
-            for (var i=1; i<29; i++)
+            for (var i = 1; i < 29; i++)
             {
                 _object3d[i].OnLoad(Warna.col + "shader1.vert", Warna.col + "shader.frag", Size.X, Size.Y);
             }
@@ -536,7 +536,7 @@ namespace Console1
             //_object[5].OnRender(3, _camera.GetViewMatrix(), _camera.GetProjectionMatrix());
 
 
-            for (var i=0; i<29; i++)
+            for (var i = 0; i < 29; i++)
             {
                 if (i == 6)
                 {
@@ -608,7 +608,7 @@ namespace Console1
                 }
                 counterSpb--;
             }
-            if (counterSpb == 200)
+            if (counterSpb == 400)
             {
                 walkSpb = 1;
             }
@@ -665,7 +665,8 @@ namespace Console1
                     _object[1].translate(0, 0, speed * 2);
 
                 }
-                else if (howmanyP < aniP * 2) {
+                else if (howmanyP < aniP * 2)
+                {
                     howmanyP += 1;
 
                     if (counterP < constanta)
@@ -703,10 +704,11 @@ namespace Console1
                     {
                         counterP -= 1;
                     }
-                    if ((howmanyP >= aniP + 0.1 * aniP) && (howmanyP <= 2 *aniP - 0.1 * aniP)) {
+                    if ((howmanyP >= aniP + 0.1 * aniP) && (howmanyP <= 2 * aniP - 0.1 * aniP))
+                    {
                         _object[1].translate(-speed, 0, speed);
                     }
-                    _object[1].rotate(_object[1]._centerPosition, _object[1]._euler[1], 90/aniP);
+                    _object[1].rotate(_object[1]._centerPosition, _object[1]._euler[1], 90 / aniP);
 
                 }
                 else if (howmanyP < aniP * 3)
@@ -1114,7 +1116,7 @@ namespace Console1
                 _object[0].child[2].rotate(_object[0].child[0]._centerPosition, _object[0].child[1]._euler[1], 1f);
                 _object[0].child[4].rotate(_object[0].child[0]._centerPosition, _object[0].child[1]._euler[1], 1f);
             }
-            
+
             if (KeyboardState.IsKeyDown(Keys.Y))
             {
                 if (!invertSpb)
@@ -1144,7 +1146,7 @@ namespace Console1
                     _object[0].child[14].rotate(_object[0].child[0]._centerPosition, _object[0].child[14]._euler[1], 0.1f);
                     _object[0].child[16].rotate(_object[0].child[0]._centerPosition, _object[0].child[16]._euler[1], 0.1f);
                     countSpb--;
-                }   
+                }
                 if (countSpb == 100)
                 {
                     invertSpb = true;
@@ -1163,7 +1165,8 @@ namespace Console1
                 _object[1].resize(0.9995f, 0.9995f, 0.9995f);
             }
 
-            if (KeyboardState.IsKeyPressed(Keys.P)) { 
+            if (KeyboardState.IsKeyPressed(Keys.P))
+            {
                 if (pauseP)
                 {
                     pauseP = false;
@@ -1305,7 +1308,7 @@ namespace Console1
             {
                 _object[0].translate(-0.01f, 0, 0);
 
-                for(int i = 21; i <= 28; i++)
+                for (int i = 21; i <= 28; i++)
                 {
                     _object3d[i].translate(-0.01f, 0, 0);
                 }
@@ -1318,7 +1321,7 @@ namespace Console1
                     _object3d[i].translate(0.01f, 0, 0);
                 }
             }
-            
+
             var mouse = MouseState;
             var sensitivity = 0.5f;
 
